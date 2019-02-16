@@ -4,7 +4,7 @@
 version: '3'
 services:
     pgweb:
-      build: ./docker/pgweb
+      image: nyankokota/pgweb
       container_name: "pgweb"
       ports:
           - "8081:8081"
@@ -20,12 +20,17 @@ services:
 
 ### 注意
 1.
-wait.shの中にDBのパスワードを記載してくささい。
+wait.shの中にDBのパスワードを記載して下さい。
 環境変数を渡しています。
 
 2.
 docker-compose.ymlの
-- DATABASE_URL=postgres://root:password@postgres:5432/${DBname}?
-の${DBname}にデータベースの名前を記載してください。
+- DATABASE_URL=postgres://${root}:${password}@postgres:5432/${DBname}?
+の中の
+${root}にデータベースのユーザー名を
+${password}にデータベースのパスワードを
+${DBname}にデータベースの名前を
+それぞれ記載してください。
+
 e,g,
 - DATABASE_URL=postgres://root:password@postgres:5432/sample?
