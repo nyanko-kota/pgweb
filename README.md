@@ -4,7 +4,7 @@
 version: '3'
 services:
     pgweb:
-      image: nyankokota/pgweb
+      image: nyankokota/pgweb:latest
       container_name: "pgweb"
       ports:
           - "8081:8081"
