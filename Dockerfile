@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-LABEL maintainer="nyankokota <mail@nyanko-kota.com>"
+LABEL maintainer="nyankokota <public@nyanko-kota.com>"
 
 ENV PGWEB_VERSION 0.11.0
 
