@@ -1,6 +1,6 @@
 #!/bin/sh
 	
-	for i in `seq 1 30`; do
+	for i in `seq 1 60`; do
 	  echo "Wait for 1 seconds..."
 	  sleep 1
 	
