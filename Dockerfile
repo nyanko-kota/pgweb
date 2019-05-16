@@ -19,4 +19,4 @@ ADD ./setup.sh /usr/bin/setup.sh
 
 EXPOSE 8081
 
-CMD ["/usr/bin/pgweb", "--bind=0.0.0.0", "--listen=8081"]
+CMD ["wait.sh"]
